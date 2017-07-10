@@ -1,0 +1,21 @@
+***two important parts in tensorflow :
+1. build the computation graph (the variables, create functions, how they execute)
+
+2. build what happens in the sessionS
+
+-------------------------------------------------------------
+
+***WHAT HAPPENS IN DEEP LEARNING :
+
+input > unique weight > hidden layer 1 (send to activation fn)
+> weight given > sent to hidden layer 2 (send to its activation fn) > .... AND SO ON
+
+compare output to intended output > cost or loss function (cross entropy = how close we are to our intended target)
+optimization fn (optimizer) > minimize the cost (AdamOptimizer.. SGD.. AdaGrad) 8 types of optimizers
+
+backpropagation : goes backwards and manipulates the weights
+
+feed forward + backprop = epoch ===one full cycle===
+hopefully lower the cost function each cycle
+
+--------------------------------------------------------------
